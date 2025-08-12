@@ -33,7 +33,7 @@ public class Treinamento {
         if(aluno.getHorasEstudo() < 80) {
             return "O aluno " + aluno.nome + " pode realizar o treinamento";
         }
-        return "";
+        return "O aluno " + aluno.nome + " não pode realizar o treinamento, pois não cumpriu a carga horária mínima de 80 horas.";
     }
 
     public void calcularMediaAluno(Aluno aluno) {
