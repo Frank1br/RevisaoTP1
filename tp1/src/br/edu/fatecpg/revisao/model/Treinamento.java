@@ -9,4 +9,11 @@ public class Treinamento {
     List<Aluno> alunos;
     boolean instrutorDisponivel = true;
 
+    public void verificarDisponibilidade() {
+        if(instrutorDisponivel) {
+            System.out.println("O instrutor " + nomeInstrutor + " está disponível.");
+        } else {
+            System.out.println("O instrutor " + nomeInstrutor + " não está disponível.");
+        }
+    }
 }
