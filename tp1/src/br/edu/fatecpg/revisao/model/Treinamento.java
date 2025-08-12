@@ -9,6 +9,13 @@ public class Treinamento {
     List<Aluno> alunos;
     boolean instrutorDisponivel = true;
 
+    public Treinamento(int id, String nomeInstrutor, String linguagemEnsinada) {
+        this.id = id;
+        this.nomeInstrutor = nomeInstrutor;
+        this.linguagemEnsinada = linguagemEnsinada;
+        this.alunos = new ArrayList<>();
+    }
+
     public void verificarDisponibilidade() {
         if(instrutorDisponivel) {
             System.out.println("O instrutor " + nomeInstrutor + " está disponível.");
