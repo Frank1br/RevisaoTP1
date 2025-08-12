@@ -16,4 +16,21 @@ public class Treinamento {
             System.out.println("O instrutor " + nomeInstrutor + " não está disponível.");
         }
     }
+
+    public int definirCargaHoraria(int horas) {
+        System.out.println("A carga horária definida é de " + horas + " horas.");
+        return horas;
+    }
+
+    public String verificarUltimoTreinamento(Aluno aluno) {
+        if(aluno.getHorasEstudo() < 80) {
+            return "O aluno " + aluno.nome + " pode realizar o treinamento";
+        }
+        return "";
+    }
+
+    public void calcularMediaAluno(Aluno aluno) {
+        double media = aluno.notaFinal / 2;
+        System.out.println("A média do aluno " + aluno.nome + " é: " + media);
+    }
 }
