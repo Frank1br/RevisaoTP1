@@ -1,10 +1,9 @@
-package br.edu.fatecpg.revisao.view;
+package br.edu.fatecpg.revisao;
 import br.edu.fatecpg.revisao.model.Aluno;
-import br.edu.fatecpg.revisao.model.Treinamento;
 import br.edu.fatecpg.revisao.model.TreinamentoOnline;
 import br.edu.fatecpg.revisao.model.TreinamentoPresencial;
 
-public class main {
+public class MainTreinamento {
     public static void main(String[] args) {
         Aluno aluno1 = new Aluno("Frank", 10.0, 10);
         Aluno aluno2 = new Aluno("Isa", 8.0, 34);
